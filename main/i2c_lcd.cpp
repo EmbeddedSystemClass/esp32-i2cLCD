@@ -149,7 +149,7 @@ void I2CLCD::writeText(const char *text, unsigned char inputRow, unsigned char i
 {
 
     unsigned char address_d = 0; // address of the data in the screen.
-    switch (row)
+    switch (inputRow)
     {
     case 0:
         address_d = 0x80 + inputCol; // at zeroth row
